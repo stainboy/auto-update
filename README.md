@@ -14,7 +14,7 @@
 mkdir -p ~/logs
 
 # 2. 创建软链接（脚本已经在 ~/scripts/ 下创建链接）
-ln -sf /Users/miles/repo/claw/daily-update/auto-upgrade.sh ~/scripts/auto-upgrade.sh
+ln -sf ~/repo/claw/daily-update/auto-upgrade.sh ~/scripts/auto-upgrade.sh
 
 # 3. 复制 plist 到 LaunchAgents
 cp com.user.auto-upgrade.plist ~/Library/LaunchAgents/

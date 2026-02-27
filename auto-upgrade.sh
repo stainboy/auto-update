@@ -13,7 +13,6 @@ log() {
 log "========== 开始自动升级 =========="
 
 # 加载用户配置
-export HOME="/Users/miles"
 export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
 # 加载 nvm

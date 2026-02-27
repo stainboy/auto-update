@@ -8,7 +8,7 @@
     <key>ProgramArguments</key>
     <array>
         <string>/bin/bash</string>
-        <string>/Users/miles/scripts/auto-upgrade.sh</string>
+        <string>~/scripts/auto-upgrade.sh</string>
     </array>
     
     <key>StartCalendarInterval</key>
@@ -20,10 +20,10 @@
     </dict>
     
     <key>StandardOutPath</key>
-    <string>/Users/miles/logs/auto-upgrade-daemon.log</string>
+    <string>~/logs/auto-upgrade-daemon.log</string>
     
     <key>StandardErrorPath</key>
-    <string>/Users/miles/logs/auto-upgrade-error.log</string>
+    <string>~/logs/auto-upgrade-error.log</string>
     
     <key>EnvironmentVariables</key>
     <dict>
