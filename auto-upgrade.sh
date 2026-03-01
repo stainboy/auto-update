@@ -15,6 +15,8 @@ log "========== 开始自动升级 =========="
 # 加载用户配置
 export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
+export HOMEBREW_NO_INSTALL_FROM_API=1
+# 使用本地仓库模式，避免 API 下载失败问题
 # 加载 nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
