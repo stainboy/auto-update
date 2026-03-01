@@ -12,9 +12,10 @@
 ```bash
 # 1. 创建日志目录
 mkdir -p ~/logs
+mkdir -p ~/scripts
 
 # 2. 创建软链接（脚本已经在 ~/scripts/ 下创建链接）
-ln -sf ~/repo/claw/daily-update/auto-upgrade.sh ~/scripts/auto-upgrade.sh
+ln -sf $PWD/auto-upgrade.sh ~/scripts/auto-upgrade.sh
 
 # 3. 复制 plist 到 LaunchAgents
 cp com.user.auto-upgrade.plist ~/Library/LaunchAgents/
