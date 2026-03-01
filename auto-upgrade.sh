@@ -35,7 +35,15 @@ else
     log "✗ brew upgrade --formula 失败"
 fi
 
-# 3. NVM 安装/更新 Node 22
+# 3. NVM 安装/更新 Node 24
+log "正在执行: nvm install 24"
+if nvm install 24 >> "$LOG_FILE" 2>&1; then
+    log "✓ nvm install 24 完成"
+else
+    log "✗ nvm install 24 失败"
+fi
+
+# 4. NVM 安装/更新 Node 22
 log "正在执行: nvm install 22"
 if nvm install 22 >> "$LOG_FILE" 2>&1; then
     log "✓ nvm install 22 完成"
@@ -43,12 +51,12 @@ else
     log "✗ nvm install 22 失败"
 fi
 
-# 4. NVM 安装/更新 Node 24
-log "正在执行: nvm install 24"
-if nvm install 24 >> "$LOG_FILE" 2>&1; then
-    log "✓ nvm install 24 完成"
+# 5. OpenClaw 更新
+log "正在执行: openclaw update"
+if openclaw update >> "$LOG_FILE" 2>&1; then
+    log "✓ openclaw update 完成"
 else
-    log "✗ nvm install 24 失败"
+    log "✗ openclaw update 失败"
 fi
 
 log "========== 自动升级结束 =========="
