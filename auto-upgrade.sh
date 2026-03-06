@@ -61,5 +61,21 @@ else
     log "✗ openclaw update 失败"
 fi
 
+# 6. Claude Code 升级
+log "正在执行: brew upgrade claude-code"
+if brew upgrade claude-code >> "$LOG_FILE" 2>&1; then
+    log "✓ brew upgrade claude-code 完成"
+else
+    log "✗ brew upgrade claude-code 失败"
+fi
+
+# 7. OpenCode 升级
+log "正在执行: brew upgrade opencode"
+if brew upgrade opencode >> "$LOG_FILE" 2>&1; then
+    log "✓ brew upgrade opencode 完成"
+else
+    log "✗ brew upgrade opencode 失败"
+fi
+
 log "========== 自动升级结束 =========="
 log ""
