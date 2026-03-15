@@ -54,6 +54,9 @@ else
 fi
 
 # 5. OpenClaw 更新
+log "正在执行: nvm use 22"
+nvm use 22 >> "$LOG_FILE" 2>&1
+
 log "正在执行: openclaw update"
 if openclaw update >> "$LOG_FILE" 2>&1; then
     log "✓ openclaw update 完成"
